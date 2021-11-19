@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* COMPONENTS STYLE */
+
+body {
+    background-color: #121212;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+   font-family: 'Inter', sans-serif; 
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+
+/* CLASS AND DIVISIONS */
+
+
+#container {
+    padding: 36px 200px;
+}
+
+/* NAVBAR */
+
+.navbar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.navbar li {
+    display: inline;
+    margin: 0 12px;
+}
+
+.navbar ul a{
+    overflow: hidden;
+    text-decoration: none;
+    color: #8d8d8d;
+    font-weight: 500;
+    transition: 0.2s ease-in;
+    align-items: center;
+}
+
+.navbar ul a:hover{
+    color: white;
+}
+
+.icon {display: none;}
+
+/* BOTNAV */
+
+.botnav {
+    position: absolute;
+    bottom: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botnav li {
+    display: inline;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+/* HERO */
+
+.hero {
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: purple;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero p {
+    margin-top: 24px;
+    color: #DDDDDD;
+    font-size: 20px;
+}
+
+.traits {
+    margin-top: 72px;
+    width: 100%;
+}
+
+.traits1 {
+}
+
+
+.traits2 {
+}
+
+/* BUTTON */
+
+.button {
+    margin-top: 52px;
+    display: flex;
+    align-items: center;
+}
+
+.button a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-decoration: underline;
+    font-size: 18px;
+    letter-spacing: 0.9px;
+}
+
+.button img{
+    margin-left: 12px;
+}
+
+/*
+.hover-effect::after{
+    content: '';
+    position: absolute;
+    width: 15%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-effect:hover::after{
+    transform: scaleX(1);
+}
+*/
+
+/* MEDIA QUERIES CSS */
+@media only screen and (max-width: 1024px) {
+    #container {
+        padding: 0;
+    }
+
+    .navbar {
+        padding: 56px 62px;
+    }
+
+    .hero {
+        padding: 0 62px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    #container {
+        padding: 0;
+    }
+
+    .navbar {
+        padding: 48px 52px;
+    }
+
+    .hero {
+        padding: 0 52px;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    #container {
+        padding: 0;
+    }
+
+    .navbar {
+        padding: 36px 32px;
+    }
+
+    .items {
+        display: none;
+    }
+
+    .hero {
+        padding: 0 36px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .icon{
+        float: right;
+        display: block;
+    }
+}
+@media only screen and (max-width: 320px) {
+    #container {
+        padding: 0;
+    }
+
+    .navbar {
+        padding: 36px 32px;
+    }
+
+    .navbar img {
+        width: 30%;
+    }
+
+    .items {
+        display: none;
+    }
+
+    .hero {
+        padding: 0 36px;
+    }
+
+    .hero h1 {
+        font-size: 20px;
+    }
+
+    .hero p {
+        font-size: 13px;
+    }
+
+    .button a {
+        font-size: 14px;
+    }
+
+    .icon{
+        float: right;
+        display: block;
+    }
+}
